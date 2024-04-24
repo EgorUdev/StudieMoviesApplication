@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Мой код для фикса отступа от статус бара
         recyclerViewMovies.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
             @Override
             public WindowInsets onApplyWindowInsets(View view, WindowInsets insets) {
