@@ -75,16 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        recyclerViewMovies.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
-            @Override
-            public WindowInsets onApplyWindowInsets(View view, WindowInsets insets) {
-                int statusBarSize = insets.getSystemWindowInsetTop();
-                ViewGroup.MarginLayoutParams layoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
-                layoutParams.topMargin = statusBarSize;
-                return insets;
-            }
-        });
     }
 
     @Override
